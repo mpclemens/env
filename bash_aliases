@@ -24,5 +24,9 @@ alias ls='ls -F'
 # Multiple terminals in the same TTY, switch with Ctrl-O
 alias scr="screen -D -R -e^Oo"
 
+# shamlessly borrowed from the web
+function urldecode() {
+        echo -ne $(echo -n "$1" | sed -E "s/%/\\\\x/g")
+}
 
 
