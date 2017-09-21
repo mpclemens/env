@@ -1,0 +1,16 @@
+# Use bash
+shell /bin/bash
+
+# In case a connection is dropped, leave screen running
+autodetach on
+
+# Big scrollback
+defscrollback 5000
+
+# No annoying startup message
+startup_message off
+
+# Display the status line at the bottom
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kW}%-w%{.bW}%t [%n]%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d %c"
