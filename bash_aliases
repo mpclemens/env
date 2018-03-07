@@ -9,3 +9,6 @@ alias ls='ls -F'
 
 # Multiple terminals in the same TTY, switch with Ctrl-O
 alias scr="screen -D -R -e^Oo"
+
+# Prune local merged branches
+cat <(git branch --merged | egrep -e '^\(feature|bug|chore\)') | xargs git branch -d

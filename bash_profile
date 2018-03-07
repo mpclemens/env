@@ -31,6 +31,14 @@ function urldecode() {
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 
+# Autocomplete git happiness
+
+# curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 #
 
 source ${HOME}/.bash_aliases
